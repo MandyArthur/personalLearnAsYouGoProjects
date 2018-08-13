@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Inspirational Quotes </title>
+        <link rel="stylesheet" href="bubbles.css" type="text/css" />
+        <script src="bubbles.js" type="text/javascript"></script> </head>
+        <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+        <body>
+   
+<div class = "typewriter">
+    <h1>Quotes...Quotes... Quotes...</h1>
+            
+</div>
+    <div class = "read">
+    <div id="quote"> </div>
+</div>
+        <button class="quote" type="button"  onClick='my()'> New Quotes </button>
+      <div class = "tweet">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        </div>  
+
+
+  <script>
+    function my() {
+      var quotes = [
+      {
+          text: "\"  I have been impressed with the urgency of doing. Knowing is not enough; we must apply. Being willing is not enough; we must do.\" -Leonardo da Vinci ",
+          img: "https://www.biography.com/.image/t_share/MTIwNjA4NjMzNTM4NTEyMzk2/leonardo-da-vinci-40396-1-402.jpg"
+        
+        },
+        {
+          text: "\"If you want to lift yourself up, lift up someone else.\" - Booker T. Washington",
+          img: "data:image/jpeg;base64,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"
+        
+        },
+        {
+          text: "\"How wonderful it is that nobody need wait a single moment before starting to improve the world.\" - Anne Frank ",
+          img: "http://www.annefrank.org/ImageVault/Images/id_5190/height_240/width_240/conversionFormatType_Jpeg/compressionQuality_80/scope_0/ImageVaultHandler.aspx"
+        
+        },
+        {
+          text: "\"When I was 5 years old, my mother always told me that happiness was the key to life. When I went to school, they asked me what I wanted to be when I grew up. I wrote down “happy”. They told me I didn’t understand the assignment, and I told them they didn’t understand life.\" - John Lennon",
+          img: "https://img.discogs.com/J19UWxyuyProuiwhaQSfzeDUchM=/fit-in/300x300/filters:strip_icc():format(jpeg):mode_rgb():quality(40)/discogs-images/A-46481-1286626601.jpeg.jpg"
+        
+        },
+        {
+          text: "\"It is our choices...that show what we truly are, far more than our abilities.\" - J. K. Rowling ",
+          img: "https://cdn-images-1.medium.com/max/2000/0*jCMeqyKliSaz_4sl.jpg"
+        
+        },
+        {
+          text: "\" I have never been remotely ashamed of having been depressed. Never. What’s to be ashamed of? I went through a really rough time and I am quite proud that I got out of that.\" -J. K. Rowling ",
+          img: "https://www.harringtonbooks.co.uk/images/upload/authors_2_1.jpg"
+        
+        },
+        {
+          text: "\"What’s money? A man is a success if he gets up in the morning and goes to bed at night and in between does what he wants to do.\" - Bob Dylan",
+          img: "https://e.snmc.io/lk/l/a/f88c2042cfea083e47b219f950122103/1188458.jpg"
+        
+        },
+        {
+          text:"\"Build your own dreams, or someone else will hire you to build theirs.\" - Farrah Gray" ,
+          img:"https://aalbc.com/author-photos/farrah-gray.jpg"
+        
+        },
+
+        {
+          text:"\"If you hear a voice within you say \"you cannot paint,\" then by all means paint and that voice will be silenced.\" - Vincent Van Gogh" ,
+          img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsobPjqTmsnI8b4EzlG-PfQoOGCC0HB9_ZGX7_JI9SyhS8I8WZ"
+        
+        },
+        
+        {
+          text:"\"The most difficult thing is the decision to act, the rest is merely tenacity.\" - Amelia Earhart" ,
+          img:"http://www.badassoftheweek.com/earhart.jpg"
+        
+        },
+        
+        {
+          text:"\"Strive not to be a success, but rather to be of value.\" - Albert Einstein",
+          img: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/06/21/16/albert-einstein-head.jpg"
+        
+        },
+        
+        {
+          text:"\"I’ve missed more than 9000 shots in my career. I’ve lost almost 300 games. 26 times I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life. And that is why I succeed.\" - Michael Jordan" ,
+          img:"https://cdn.nba.net/nba-drupal-prod/styles/landscape/http/i2.cdn.turner.com/nba/nba/dam/assets/130828123801-michael-jordan-iso-1998-all-star-game.video-player.jpg?itok=FGvQfRCL"
+        
+        },
+        
+        {
+          text:"\"Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails. Explore, Dream, Discover.\" - Mark Twain " ,
+          img: "https://www.arbornetworks.com/blog/insight/wp-content/uploads/2017/01/mark-twain-wisr.png"
+        },
+        
+        {
+          text: "\"Whatever the mind of man can conceive and believe, it can achieve.\" - Napolean Hill",
+          img: "https://upload.wikimedia.org/wikipedia/commons/7/75/Napoleon_Hill_headshot.jpg"
+        
+        },
+        
+        {
+          text: "\"Do or do not. There is no try.\"- Yoda",
+          img:"https://lumiere-a.akamaihd.net/v1/images/ep3_ia_89377_r_bb46f7c6.jpeg?region=500%2C313%2C2925%2C1462&width=480"
+        
+        },
+        
+        {
+          text:"\"Too many of us are not living our dreams because we are living our fears.\" - Les Brown" ,
+          img: "https://i.ytimg.com/vi/59CmEKAjBzY/maxresdefault.jpg"
+        
+        },
+        
+        {
+          text:"\"I can’t change the direction of the wind, but I can adjust my sails to always reach my destination.\" -Jimmy Dean" ,
+          img: "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_80%2Cw_300/MTE4MDAzNDEwNDE2NTM1MDU0/jimmy-dean-575760-1-402.jpg"
+        
+        },
+    
+
+        {
+          text: "\"Remember no one can make you feel inferior without your consent. \" - Eleanor Roosevelt",
+          img: "https://3.bp.blogspot.com/-hlJmmy-r7Z8/Vhh-UN9cUgI/AAAAAAAARsU/PJNsUQ8D8hc/s1600/Eleanor-Roosevelt-1.jpg"
+        },
+        {
+          text: "\"If you look at what you have in life, you’ll always have more. If you look at what you don’t have in life, you’ll never have enough.\" - Oprah Winfrey",
+          img:"https://www.thefamouspeople.com/profiles/images/oprah-winfrey-3.jpg"
+        
+        },
+        {
+          text: "\"Life is 10% what happens to me and 90% of how I react to it.\"  - Charles Swindoll",
+          img: "https://www.insightforliving.ca/sites/default/files/author/chuck-swindoll.jpg"
+        },
+        {
+          text: "\"Perfection is not attainable, but if we chase perfection we can catch excellence.\" - Vince Lombardi",
+          img:"https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_80%2Cw_300/MTE1ODA0OTcxNzAzNDM2ODEz/vince-lombardi-9385362-1-402.jpg"
+        
+        },
+        {
+          text: "\"Whether you think you can or you think you can’t, you’re right.\" - Henry Ford",
+          img: "https://www.gradiant.org/wp-content/uploads/2016/05/ford-model-t.png"
+        },
+        {
+          text: "\I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.\" — Maya Angelou",
+          img: "http://poictesme.com/wp-content/uploads/2016/02/Maya-Angelou-1.jpg"
+        
+        },
+        {
+          text: "\Nothing is impossible, the word itself says “I’m possible!\" — Audrey Hepburn",
+          img: "https://www.thefamouspeople.com/profiles/images/audrey-hepburn-4.jpg"
+        }
+      ];
+      var quote = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById("quote").innerHTML = '<p>' + quote.text + '</p>' +
+        '<img src="' + quote.img + '">'; 
+       
+    };
+
+    /**         {
+    text: "\"\" - ",
+    img: ""
+  
+  }, */
+  </script>
+
+        </body>
+
+
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<head>
+    <title>JavaScript Timeline</title> 
+    <link rel="stylesheet" type="text/css" href="scriptdesign.css">
+ 
+</head>
+<body>
+        <ul class="menu">
+                <li class="menu"><a href="time.html">Intro & Day 1</a></li>
+                <li class="menu"><a href="numbers.html">Day 2</a></li>
+                <li class="menu"><a href="day3.html">Day 3 </a></li>
+                <li class="menu"><a href="day4.html">Day 4</a></li>
+                <li class="menu"><a href="day5.html">Day 5</a></li>
+                <li class="menu"><a href="Day6.html">Day 6</a></li>
+                <li class="menu"><a href="day7.html">Day 7</a></li>
+                <li class="menu"><a href="newbuild.html">Day 8</a></li>
+                <li class="menu"><a href="newbuild.html">Day 9</a></li>
+
+              </ul>
+<div style="margin-left:15%;padding:1px 16px;height:1000px;"> 
+        <h1>Amanda's JavaScript Timeline</h1>
+<h2>JavaScript Switch Statements</h2>
+<h2><a href="https://www.w3schools.com/js/js_switch.asp"> Exercises </a></h2>
+
+<ol>
+    <li> The switch statement is missing a case for "Apple". Add it, and set text to "How you like them apples?"</li>
+    <p> Your main options here are Apple, Banana and Orange. </p>
+        <input id="myInput" type="text" value="Apple">
+        <button onclick="checkFruit()">Check Fruit</button>
+        <p id="alpha"></p>
+
+        <script>
+        function checkFruit() {
+        var text;
+        var fruits = document.getElementById("myInput").value;
+
+        switch(fruits) {
+            case "Banana":
+            text = "Banana is good!";
+            break;
+            case "Orange":
+            text = "I am not a fan of orange.";
+            break;
+            case "Apple":
+            text = "How you like them apples?";
+            break;
+
+            // add case here
+
+            default:
+            text = "I have never heard of that fruit.";
+        }
+        document.getElementById("alpha").innerHTML = text;
+        }
+        </script>
+
+    <li> The switch statement is missing a default case. Add it at the bottom of the switch statement, 
+        and set text to "I have never heard of that fruit."</li>
+
+        <input id="myInputBeta" type="text" value="Tutti Frutti">
+            <button onclick="checkFruitbeta()">Check Fruit</button>
+            <p id="beta"></p>
+
+            <script>
+            function checkFruitbeta() {
+            var textBeta;
+            var fruitsBeta = document.getElementById("myInputBeta").value;
+
+            switch(fruitsBeta) {
+                case "Banana":
+                textBeta = "Banana is good!";
+                break;
+                case "Orange":
+                textBeta = "I am not a fan of orange.";
+                break;
+                case "Apple":
+                textBeta = "How you like them apples?";
+                break;
+                // add the default keyword here
+                default:
+                textBeta = "I have never heard of that fruit.";
+            }
+            document.getElementById("beta").innerHTML = textBeta;
+            }
+            </script>
+
+    <li> The switch statement does not work. Try to fix it.</li> 
+    
+    <input id="myInputGamma" type="text" value="Orange">
+        <button onclick="checkFruitGamma()">Check Fruit</button>
+        <p id="gamma"></p>
+
+        <script>
+        function checkFruitGamma() {
+        var textGamma;
+        var fruitsGamma = document.getElementById("myInputGamma").value;
+
+        switch(fruitsGamma) {
+            case "Banana":
+            textGamma = "Banana is good!";
+            break; 
+            case "Orange":
+            textGamma = "I am not a fan of orange.";
+            break; 
+            case "Apple":
+            textGamma = "How you like them apples?";
+            break; 
+            default:
+            textGamma = "I have never heard of that fruit.";
+        }
+        document.getElementById("gamma").innerHTML = textGamma;
+        }
+        </script>
+
+    <li> Finish the switch statement. Add the following cases: BMW, Ford and Peugeot. <br>
+            Set the value of the variable text to: "German car" for BMW. "American car" for Ford. "French car" <br> 
+            for Peugeot. Also add a default case where the text value is "Unknown car name".</li>    
+
+            
+            <input id="myInputDelta" type="text" value="BMW">
+            <button onclick="checkCar()">Check Car</button>
+            <p id="delta"></p>
+
+            <script>
+            function checkCar() {
+            var text;
+            var favCar = document.getElementById("myInputDelta").value;
+
+            switch(favCar) {
+            
+            case "BMW": 
+            textDelta = "French car"; 
+            break; 
+            
+            case "Ford": 
+            textDelta = "American car"; 
+            break; 
+            
+            case "Peugeot": 
+            textDelta = "French car"; 
+            break; 
+            
+            default: 
+            textDelta = "Unknown car name"; 
+            
+                // add code here
+            }
+            document.getElementById("delta").innerHTML = textDelta;
+            }
+            </script>
+
+</ol>
+
+<h2>JavaScript Loops</h2>
+        <p> Gift ideas for <a href="https://www.vendingsuperstore.co.uk/collections/tea-coffee-for-hotels"> New home.</a> </p>
+
+        <p id="eta"></p>
+
+        <script>
+        var welcomeTin = ["Tea, milk, sugar & coffee sachets", "Biscuits", "Toiletries", "Fresh bread", "Bottled water", "Kettle"];
+        var textEta = "<ol>";
+        var i;
+        for (i = 0; i < welcomeTin.length; i++) {
+
+            textEta += "<li>" + welcomeTin[i] + "</li>";
+            
+        }
+        textEta += "</ol>";
+
+        document.getElementById("eta").innerHTML = textEta;
+        </script>
+
+        <h2>JavaScript Loops</h2>
+
+        <p id="note">The for/in statement loops through the properties of an object.</p>
+
+        <p id="theta"></p>
+
+        <script>
+        var txtTheta = "";
+        var person = {fname:"John", lname:"Doe", age:25}; 
+        var x;
+        for (x in person) {
+            txtTheta += person[x] + " ";
+        }
+        document.getElementById("theta").innerHTML = txtTheta;
+        </script>
+
+
+
+<h2><a href="https://www.w3schools.com/js/js_loop_for.asp">Exercises</a></h2>
+<ol>
+    <li>In the for loop, change num1 to 0 and num2 to 10 and run the code.</li>
+    <p id="epsilon"></p>
+
+    <script>
+    var i;
+    for (i = 0; i < 10; i++) {
+        document.getElementById("epsilon").innerHTML += i + "<br>";
+    }
+    </script>
+    <li>Make the loop start counting from 5 instead of 0</li>
+    
+
+    <p id="iota"></p>
+
+    <script>
+    var i;
+    for (i = 5; i < 10; i++) {
+        document.getElementById("iota").innerHTML += i + "<br>";
+    }
+    </script>
+
+    <li> Make the loop start counting from 5. Count up to (including) 50, and count only every fifth number.</li>
+    <p id="kappa"></p>
+
+    <script>
+    var i;
+    for (i = 5; i < 51; i+=5) {
+        document.getElementById("kappa").innerHTML += i + "<br>";
+    }
+
+    
+    </script>
+    <li> Make the loop start counting downwards from 10 and stop at 1.
+
+        <br>The output should be 10 9 8 7 6 5 4 3 2 1 with line breaks.</li>
+
+
+        <p id="lambda"></p>
+
+            <script>
+            var i;
+            for (i = 10; i > 0; i--) {
+                document.getElementById("lambda").innerHTML += i + "<br>";
+            }
+            </script>
+   
+   <li> Inside the for loop: Set the counter variable (i) to 0. 
+    <br>Run the loop as long as i is less than the length of the food array. 
+    <br> Increment i by 1.</li>
+
+    <p id="mu"></p>
+
+        <script>
+        var text = "";
+        var food = ["Pizza", "Beans", "Tacos", "Fish", "Chicken"];
+        var i;
+
+        for (i=0; i<food.length; i++) {
+            text += "I love " + food[i] + "<br>";
+        }
+
+        document.getElementById("mu").innerHTML = text;
+        </script>
+    
+    <li>In this exercise, you are going to create a for loop from scratch. <br>
+        We have already created the counter variable i for you, and a text variable for output. <br>
+        Your task is to create a FOR LOOP that output the numbers 1 3 5 7 9 with 
+        line breaks between each number. <br>
+        WARNING: Remember to increase the variable used in the condition to avoid infinite loops 
+        (will crash your browser). </li>
+
+    
+    <p id="nu"></p>
+
+    <script>
+    var text = "";
+    var i;
+
+    for (i=1; i<10;i+=2){
+
+    document.getElementById("nu").innerHTML += i + "<br>";
+    // add for loop here
+    }
+
+    </script>
+
+
+</ol>
+
+        <h2>JavaScript While Loop</h2>
+
+        <p id="note">In the following example, 
+            the code in the loop will run, over and over again, as long as a variable (i) is less than 10</p>
+
+        <p id="xi"></p>
+
+        <script>
+        var text = "";
+        var i = 0;
+        while (i < 10) {
+            text += "<br>The number is " + i;
+            i++;
+        }
+        document.getElementById("xi").innerHTML = text;
+        </script>
+
+<h2>JavaScript Do ... While loop</h2>
+
+<p id="omikron"></p>
+
+<script>
+var text = ""
+var i = 0;
+
+do {
+    text += "<br>The number is " + i;
+    i++;
+}
+while (i < 10);  
+
+document.getElementById("omikron").innerHTML = text;
+</script>
+
+    <h1>Break & Continue Statements</h1>
+
+        <p id="note">A loop with a break.</p>
+
+        <p id="rho"></p>
+
+        <script>
+        var text = "";
+        var i;
+        for (i = 0; i < 10; i++) {
+            if (i === 3) { break; }
+            text += "The number is " + i + "<br>";
+        }
+        document.getElementById("rho").innerHTML = text;
+        </script>
+    
+    <p id="note">Continue Loop: A loop which will skip the step where i = 3.</p>
+
+        <p id="sigma"></p>
+
+        <script>
+        var text = "";
+        var i;
+        for (i = 0; i < 10; i++) {
+            if (i === 3) { continue; }
+            text += "The number is " + i + "<br>";
+        }
+        document.getElementById("sigma").innerHTML = text;
+        </script>
+
+
+<p id="note">
+    The continue statement (with or without a label reference) can only be used <strong>to skip one loop iteration.</strong><br>
+        The break statement, without a label reference, can only be used
+     <strong>to jump out of a loop or a switch.</strong><br>With a label reference, the break statement
+      can be used to <strong>jump out of any code block.</strong></p>
+
+      <h2><a href="https://www.w3schools.com/js/js_break.asp">Exercises</a></h2>
+
+      <ol>
+          <li> Use the break statement to stop the loop at 5.</li>
+          <p id="tau"></p>
+
+        <script>
+        var text = "";
+        var i;
+        for (i = 1; i < 10; i++) {
+            if (i === 5) break;
+            document.getElementById("tau").innerHTML += i + "<br>";
+        }
+        </script>
+        <li>Use the continue statement to skip the number 5 in the loop.</li>
+
+        <p id="upsilon"></p>
+
+            <script>
+            var text = "";
+            var i;
+            for (i = 1; i < 10; i++) {
+                if (i === 5) continue;  
+                document.getElementById("upsilon").innerHTML += i + "<br>";
+            }
+
+            </script>
+
+            <li>Use the continue statement to skip the numbers 5 AND 7 in the loop. </li>
+            <p id="phi"></p>
+
+            <script>
+            var text = "";
+            var i;
+            for (i = 1; i < 10; i++) {
+                if (i === 5 || i===7) continue;  
+                document.getElementById("phi").innerHTML += i + "<br>";
+            }
+            </script>
+        <li>Use the continue statement to not output the array's element "Saab".</li>
+
+        <p id="chi"></p>
+
+            <script>
+            var cars = ["BMW", "Volvo", "Saab", "Ford"];
+            var text = ""
+            var i;
+            for (i = 0; i < cars.length; i++) {
+                if (i === 2) continue;
+                text += cars[i] + "<br>";
+            }
+            document.getElementById("chi").innerHTML = text;
+            </script>
+
+</ol>
+      
+
+    </div>
+
+    </body>
+    </html>

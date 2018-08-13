@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>JavaScript Timeline</title> 
+    <link rel="stylesheet" type="text/css" href="scriptdesign.css">
+ 
+</head>
+<body>
+        <ul class="menu">
+                <li class="menu"><a href="time.html">Intro & Day 1</a></li>
+                <li class="menu"><a href="numbers.html">Day 2</a></li>
+                <li class="menu"><a href="day3.html">Day 3 </a></li>
+                <li class="menu"><a href="day4.html">Day 4</a></li>
+                <li class="menu"><a href="day5.html">Day 5</a></li>
+                <li class="menu"><a href="Day6.html">Day 6</a></li>
+                <li class="menu"><a href="day7.html">Day 7</a></li>
+                <li class="menu"><a href="newbuild.html">Day 8</a></li>
+                <li class="menu"><a href="newbuild.html">Day 9</a></li>
+
+              </ul>
+<div style="margin-left:15%;padding:1px 16px;height:1000px;"> 
+        <h1>Amanda's JavaScript Timeline</h1>
+
+<p>Please input a number between 18 and 35:</p>
+
+<input id="demo" type="text" value="Rez">
+<button type="button" onclick="sucessTest()">Test Input</button>
+
+<p id="beta"></p>
+
+<script>
+function sucessTest() {
+    var message, x;
+    message = document.getElementById("beta");
+    message.innerHTML = "Well done! Try numbers outside the limits to see error messages.";
+    x = document.getElementById("demo").value;
+    try { 
+        if(x == "")  throw "is empty";
+        if(isNaN(x)) throw "is not a number";
+        x = Number(x);
+        if(x > 35)   throw "is too high";
+        if(x < 18)    throw "is too low";
+    }
+    catch(err) {
+        message.innerHTML = "Input " + err;
+    }
+    finally {
+        document.getElementById("demo").value = "";
+    }
+}
+</script>
+
+<p> I learnt about  </p>
+<li>Bitwise</li>
+<li> Reg Exp</li> 
+<li> Debugging</li>
+<li> Hoisting</li>
+<p>I needed to view some Youtube tutorials on the freeCodeCamp channel by Beau to comprehend these topics.</p>
+
+</div>
+</body>
+</html>

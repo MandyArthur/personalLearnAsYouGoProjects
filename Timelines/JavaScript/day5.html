@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<head>
+    <title>JavaScript Timeline</title> 
+    <link rel="stylesheet" type="text/css" href="scriptdesign.css">
+ 
+</head>
+<body>
+        <ul class="menu">
+                <li class="menu"><a href="time.html">Intro & Day 1</a></li>
+                <li class="menu"><a href="numbers.html">Day 2</a></li>
+                <li class="menu"><a href="day3.html">Day 3 </a></li>
+                <li class="menu"><a href="day4.html">Day 4</a></li>
+                <li class="menu"><a href="day5.html">Day 5</a></li>
+                <li class="menu"><a href="Day6.html">Day 6</a></li>
+                <li class="menu"><a href="day7.html">Day 7</a></li>
+                <li class="menu"><a href="newbuild.html">Day 8</a></li>
+                <li class="menu"><a href="newbuild.html">Day 9</a></li>
+
+              </ul>
+<div style="margin-left:15%;padding:1px 16px;height:1000px;"> 
+        <h1>Amanda's JavaScript Timeline</h1>
+        
+    <h4 id="alpha"> </h4>
+        <script>
+            var d = new Date(2018,03,04,9,15,38,0);
+            document.getElementById("alpha").innerHTML ="Today's work started at: " + d;
+            </script>
+
+    <p> Hello! I realise that I didn't get much done yesterday. I had an interview to attend for a temporary IT job. 
+        I was also not really registering what I was meant to be learning, so I thought I'd get back on it today. This is
+        why day 4 looks a lot shorter than day 5. 
+    </p>
+        <h4> Array methods</h4>
+            <p id="note">The splice() method adds new elements to an array.</p>
+
+        <button onclick="addVars()">Try it</button>
+
+        <p id="beta"></p>
+
+        <script>
+        var drinks = ["Smoothie", "Coke", "Apple Sauce", "Sparkling Water"];
+        document.getElementById("beta").innerHTML = drinks;
+        function addVars() {
+            drinks.splice(2, 0, "Water", "Gravy");
+            document.getElementById("beta").innerHTML = drinks;
+        }
+        </script>
+
+        <p id="note">The splice() methods can be used to remove array elements.</p>
+
+        <button onclick="mySubjects()">Try it</button>
+
+        <p id="gamma"></p>
+
+        <script>
+        var subjects = ["Mathematics", "Science", "English", "Technology"];
+        document.getElementById("gamma").innerHTML = subjects;
+        function mySubjects() {
+            subjects.splice(0, 1);
+            document.getElementById("gamma").innerHTML = subjects;
+        }
+        </script>
+
+        <h5>concat()</h5>
+
+        <p id="note">The concat() method is used to merge (concatenate) arrays:</p>
+
+        <p id="delta"></p>
+
+        <script>
+        var myGirls = ["Celine Dion", "Dua Lipa"];
+        var myBoys = ["DJ Khalid", "Justin Beiber", "Calvin Harris"];
+        var myCrew = myGirls.concat(myBoys);
+
+        document.getElementById("delta").innerHTML = myCrew;
+        </script>
+
+        <p>The concat() method is used to merge (concatenate) arrays:</p>
+
+        <p id="eta"></p>
+
+        <script>
+        var legends1 = ["JK Rowling", "M Arthur"];
+        var legends2 = ["D Gallichan", "K Lawson", "E Musk"];
+        var legends3 = ["C Cabello", "D Johnson"];
+
+        var myHeroes = legends1.concat(legends2, legends3); 
+
+        document.getElementById("eta").innerHTML = myHeroes;
+        </script>
+        <p>The concat() method can also merge values to arrays:</p>
+
+        <p id="theta"></p>
+
+        <script>
+        var choc1 = ["Kitkat", "Mars"];
+        var myTempts = choc1.concat(["Snickers", "Picnic", "Bounty"]); 
+        document.getElementById("theta").innerHTML = myTempts;
+        </script>
+
+        <p id="iota"></p>
+
+        <script>
+        var problems = ["Teenage Drama","Poverty", "Natural Calamities", "Famine", "Pollution"];
+        var realProblems = problems.slice(2);
+        document.getElementById("iota").innerHTML = problems + "<br><br>" + realProblems;
+
+        </script>
+<h4><a href="https://www.w3schools.com/js/js_array_methods.asp">Exercise</a></h4>
+
+<ol>
+    <li> Use the pop() method to remove the last item from the fruits array.</li>
+
+    
+            <p id="kappa"></p> 
+            <p id="lambda"></p> 
+
+            <script>
+            var fruits = ["Banana", "Orange", "Apple"];
+            document.getElementById("kappa").innerHTML = fruits;
+            fruits.pop(); 
+            document.getElementById("lambda").innerHTML = fruits;
+            </script>
+    <li> Use the push() method to add a new item to fruits: Kiwi. </li>
+
+            <p id="mu"></p> 
+
+            <script>
+            var fruits = ["Banana", "Orange", "Apple"];
+            fruits.push("Kiwi"); 
+            document.getElementById("mu").innerHTML = fruits;
+            </script>
+    <li>Use the splice() method to remove "Orange" and "Apple" from fruits.</li>
+        <p id="nu"></p> 
+        <p id="xi"></p> 
+        <script>
+        var fruits = ["Banana", "Orange", "Apple", "Kiwi"];
+        document.getElementById("nu").innerHTML = fruits;
+        fruits.splice(1,2); 
+        document.getElementById("xi").innerHTML = fruits;
+
+        </script>
+        <li>Use the concat() method to concatenate girls and boys.</li>
+
+        <p id="omikron"></p> 
+
+            <script>
+            var girls = ["Cecilie", "Lone"];
+            var boys = ["Emil", "Tobias", "Linus"];
+            var children = girls.concat(boys); 
+            document.getElementById("omikron").innerHTML = children;
+            </script>
+
+</ol>
+
+            <h4>Sorting Arrays</h4>
+            <p id="note">The sort() method sorts an array alphabetically.</p>
+
+            <button onclick="alphabetise()">Alphabetise</button>
+
+            <p id="rho"></p>
+            <p id="tau"></p>
+
+            <script>
+            var languages = ["Malayalam", "Thai", "Arabic", "Hindi", "Tamil", "Zulu"];
+            document.getElementById("rho").innerHTML = languages;
+
+            function alphabetise() {
+                languages.sort();
+                document.getElementById("tau").innerHTML = languages;
+            }
+            </script>
+
+
+            <p id="note">The reverse() method reverts the elements.</p>
+
+            <button onclick="reverso()">Reverse it</button>
+
+            <p id="upsilon"></p>
+
+            <script>
+            var bodyParts = ["Head", "Shoulders", "Knees", "Toes"];
+            document.getElementById("upsilon").innerHTML = bodyParts;
+
+            function reverso() {
+                bodyParts.sort();
+                bodyParts.reverse();
+                document.getElementById("upsilon").innerHTML = bodyParts;
+            }
+            </script>
+
+            <p>Click the button to sort the array in ascending order.</p>
+
+            <button onclick="order()">Try it</button>
+
+            <p id="phi"></p>
+            <button onclick="reorder()">Try it</button>
+            <p id="chi"></p>
+
+            <script>
+            var points = [40, 100, 1, 5, 25, 10];
+            document.getElementById("phi").innerHTML = points;    
+
+            function order() {
+                points.sort(function(a, b){return a - b});
+                document.getElementById("phi").innerHTML = points;
+            }
+            </script>
+            <script>
+            var points = [40, 100, 1, 5, 25, 10];
+            document.getElementById("chi").innerHTML = points;
+
+                function reorder() {
+                points.sort(function(a, b){return b - a});
+                document.getElementById("chi").innerHTML = points;
+
+            }
+        </script>
+        <h5>Sorting an Array in Random Order</h5>
+
+        <p id="note">Click the button (again and again) to sort the array in random order.</p>
+
+            <button onclick="randomise()">Try it</button>
+
+            <p id="psi"></p>
+
+            <script>
+            var points = [40, 100, 1, 5, 25, 10];
+            document.getElementById("psi").innerHTML = points;    
+
+            function randomise() {
+                points.sort(function(a, b){return 0.5 - Math.random()});
+                document.getElementById("psi").innerHTML = points;
+            }
+            </script>
+
+            <h5>Highest number in an array</h5>
+
+            <p >The highest number is <span id="omega"></span>.</p>
+
+                <script>
+                var points = [40, 100, 1, 5, 25, 10];
+                document.getElementById("omega").innerHTML = myArrayMax(points);
+
+                function myArrayMax(arr) {
+                    return Math.max.apply(null, arr);
+                }
+                </script>
+
+                <p>The lowest number is <span id="demo1"></span>.</p>
+
+                <script>
+                var points = [40, 100, 1, 5, 25, 10];
+                document.getElementById("demo1").innerHTML = myArrayMin(points);
+
+                function myArrayMin(arr) {
+                    return Math.min.apply(null, arr);
+                }
+                </script>
+            <h5>Sort Objects</h5>
+            <p>Click the buttons to sort car objects on age.</p>
+
+                <button onclick="myFunction()">Sort</button>
+
+                <p id="demo3"></p>
+
+                <script>
+                var cars = [
+                {type:"Volvo", year:2016},
+                {type:"Saab", year:2001},
+                {type:"BMW", year:2010}]
+
+                displayCars(); //function to display the array
+
+                function myFunction() {
+                    cars.sort(function(a, b){return a.year - b.year}); //Sorts in year order 
+                    displayCars(); //Displays the array
+                }
+
+                function displayCars() { //States how you would like the array displayed
+                document.getElementById("demo3").innerHTML =
+                cars[0].type + " " + cars[0].year + "<br>" +
+                cars[1].type + " " + cars[1].year + "<br>" +
+                cars[2].type + " " + cars[2].year;
+                }
+                </script>
+
+
+    </div>
+</body>

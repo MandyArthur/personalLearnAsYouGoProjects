@@ -1,0 +1,81 @@
+html, body {
+	padding:0;
+	margin:0;
+	min-height:100%;
+	
+	background-image:linear-gradient(to bottom,#3340B4,#7603F8);
+	background-attachment:fixed;
+}
+img{
+    float: right;
+    border-radius: 50%;
+    height: 220px;
+    width:225px;
+
+}
+html * { z-index: 1; position:relative; }
+#bubbleContainer {
+	z-index:0;
+	overflow:hidden;
+	position:fixed;
+	height:100%;
+	width:100%;
+}
+#bubbleContainer div {
+	position:fixed;
+	z-index:-1;
+	border-radius:1000px;
+}
+
+h1{
+    position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+button{
+    position: fixed;
+    top: 20px; 
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    color: black; 
+}
+
+.read{
+    font-family: 'Abhaya Libre';
+    color: #07FCC7; 
+    text-shadow: 2px 2px #222E35;
+    font-size: 40px;
+    border-style: solid;
+    border-color: black; 
+    
+    border-width: 2px 10px 4px 20px;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter{
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }

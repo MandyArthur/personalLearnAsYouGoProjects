@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<head>
+    <title>JavaScript Timeline</title> 
+    <link rel="stylesheet" type="text/css" href="scriptdesign.css">
+</head>
+<body>
+        <ul class="menu">
+                <li class="menu"><a href="time.html">Intro & Day 1</a></li>
+                <li class="menu"><a href="numbers.html">Day 2</a></li>
+                <li class="menu"><a href="day3.html">Day 3 </a></li>
+                <li class="menu"><a href="day4.html">Day 4</a></li>
+                <li class="menu"><a href="day5.html">Day 5</a></li>
+                <li class="menu"><a href="Day6.html">Day 6</a></li>
+                <li class="menu"><a href="day7.html">Day 7</a></li>
+                <li class="menu"><a href="newbuild.html">Day 8</a></li>
+                <li class="menu"><a href="newbuild.html">Day 9</a></li>
+
+              </ul>
+<div style="margin-left:15%;padding:1px 16px;height:1000px;">
+    <h1>Amanda's JavaScript Timeline</h1>
+
+    <h4>28th March 2018</h4>
+    <h5>Numbers Exercises </h5>
+    <ol>
+        <li> Create a variable called myNumber, assign the value 50 to it, and display it.</li>
+                <p id="alpha">Display the result here.</p> 
+
+                <script>
+                // Create the variable here
+                var myNumber = 50; 
+                document.getElementById("alpha").innerHTML = myNumber; 
+                </script>
+            <li> Divide x by 3.</li>
+                <p id="beta"></p> 
+
+                <script>
+                var x = 50;
+                document.getElementById("beta").innerHTML = x/3;
+                </script>
+                <li>The value of z should be 11. Find out what's wrong and fix it.</li>
+                
+                <p id="gamma"></p> 
+
+                <script>
+                var x = 5;
+                var y = 6;
+                var z = x + y;
+                document.getElementById("gamma").innerHTML = z;
+                </script>
+            <li>Display the product of 8 * 5, using two variables x and y.</li>
+                <p id="delta">Display the result here.</p> 
+
+                <script>
+                var x = 8; 
+                var y = 5; 
+
+                document.getElementById("delta").innerHTML = x*y;
+
+                </script>
+    </ol>
+ <h4><a href = "https://www.w3schools.com/js/js_number_methods.asp"> JS Number Methods</a> </h4> 
+ 
+<h5>The toString() Method</h5>
+    <p id ="note">toString() returns a number as a string.</p>
+            <p id="epsilon"></p>
+            <script>
+                    var x = 123;
+                    document.getElementById("epsilon").innerHTML =
+                        x.toString() + "<br>" +
+                    (123).toString() + "<br>" +
+                    (100 + 23).toString();
+                    </script>
+<h5>The toExponential() Method</h5>
+    <p id ="note">toExponential() returns a string, with a number rounded and written using exponential 
+        notation.</p>
+        <p id="zeta"></p>
+
+            <script>
+            var x = 9.656;
+            document.getElementById("zeta").innerHTML =
+                x.toExponential() + "<br>" + 
+                x.toExponential(2) + "<br>" + 
+                x.toExponential(4) + "<br>" + 
+                x.toExponential(6);
+            </script>
+
+<h5> The toFixed() Method</h5>
+    <p id="note">toFixed() returns a string, with the number written with a specified number of decimals</p>
+
+        <p id="eta"></p>
+
+        <script>
+        var x = 9.656;
+        document.getElementById("eta").innerHTML =
+            x.toFixed(0) + "<br>" +
+            x.toFixed(2) + "<br>" +
+            x.toFixed(4) + "<br>" +
+            x.toFixed(6);
+        </script>
+<h5>The toPrecision() Method</h5>
+    <p id="note">toPrecision() returns a string, with a number written with a specified length</p>
+        <p id="theta"></p>
+
+    <script>
+    var x = 9.656;
+    document.getElementById("theta").innerHTML = 
+        x.toPrecision() + "<br>" +
+        x.toPrecision(2) + "<br>" +
+        x.toPrecision(4) + "<br>" +
+        x.toPrecision(6);    
+    </script>
+<h5>The valueOf() Method</h5>
+
+    <p id="note">valueOf() returns a number as a number.</p>
+    <p id="iota"></p>
+    <script>
+            var x = 123;
+            
+            document.getElementById("iota").innerHTML = 
+                x.valueOf() + "<br>" +
+                (123).valueOf() + "<br>" +
+                (100 + 23).valueOf();
+    </script>
+
+<h5>The Number() Method</h5>
+        <p id="note">Number() can be used to convert JavaScript variables to numbers</p>
+        <p id="kappa"></p>
+        <script>
+        document.getElementById("kappa").innerHTML = 
+            Number(true) + "<br>" +
+            Number(false) + "<br>" +
+            Number("  10") + "<br>" +
+            Number("10  ") + "<br>" +
+            Number("10 6") + "<br>" + 
+            Number("10,6") + "<br>" + 
+            Number("Amy");
+            </script>
+     
+            <p id="note">Number() can also convert a date to a number</p>
+
+        <script> 
+        var c = new Date("2017-09-30");
+            document.getElementById("kappa").innerHTML = Number(c);
+        </script>
+<h5>The parseInt() Method</h5>
+        <p id="note">parseInt() parses a string and returns a whole number. Spaces are allowed.
+             Only the first number is returned</p>
+                         
+                <p id="lambda"></p>
+
+                <script>
+                document.getElementById("lambda").innerHTML = 
+                    parseInt("10") + "<br>" +
+                    parseInt("10.33") + "<br>" +
+                    parseInt("10 6") + "<br>" +    
+                    parseInt("10 years") + "<br>" +    
+                    parseInt("years 10");    
+                </script>
+<h5>The parseFloat() Method</h5>
+<p id="note">parseFloat() parses a string and returns a number. Spaces are allowed. Only the first 
+    number is returned</p>
+
+    
+        <p id="mu"></p>
+
+        <script>
+        document.getElementById("mu").innerHTML = 
+            parseFloat("10") + "<br>" +
+            parseFloat("10.33") + "<br>" +
+            parseFloat("10 6") + "<br>" +    
+            parseFloat("10 years") + "<br>" +
+            parseFloat("years 10");        
+        </script>
+<h5>Number Properties</h5>
+<p id="note">MAX_VALUE: Returns the largest number possible in JavaScript</p>
+
+<p id="nu"></p>
+
+<script>
+document.getElementById("nu").innerHTML = "Max Value = " + Number.MAX_VALUE;
+</script>
+
+<p id="note">MIN_VALUE: Returns the smallest number possible in JavaScript</p>
+<p id="zi"></p>
+<script>
+        document.getElementById("zi").innerHTML = "Min Value = " + Number.MIN_VALUE;
+        </script>
+
+<p id="note">NEGATIVE_INFINITY: Represents negative infinity (returned on overflow)</p>
+<p id="omikron"></p>
+<script>
+        document.getElementById("omikron").innerHTML = "Neative Inifinity = " + Number.NEGATIVE_INFINITY;
+        </script>
+
+<p id="note">NaN: Represents a "Not-a-Number" value</p>
+<p id="pi"></p>
+<script>
+        document.getElementById("pi").innerHTML = "NAN = " + Number.NAN;
+        </script>
+
+<p id="note">POSITIVE_INFINITY:	Represents infinity (returned on overflow)</p>
+<p id="rho"></p>
+<script>
+        document.getElementById("rho").innerHTML = "Positive Infinity = " + Number.POSITIVE_INFINITY;
+        </script>
+</div>
+</body>

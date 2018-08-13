@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Cafe Seat Booking Form </title>
+    </head>
+    <body>
+        <form action = "destination.html" method="GET">
+            <fieldset>
+                <legend>Personal Details: </legend>
+                <label for="name"> Username:</label><input type="text" name = "username" id = "name" required autofocus placeholder="Your Username" pattern="[a-zA-Z]{3,}" title="Your username goes here">
+                <label for="email"> Email: </label><input type="text" name="email" id="email" required placeholder="Your Email" pattern="[a-zAZ]{3,}[a-zA-A]{3,}[.]{1}[a-zA-Z]{2,}" title="Please enter your contact email address" >
+                <label for="phone"> Phone:</label><input type="tel" name="phone" id="phone" required placeholder="Please enter your phone number" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" title="Please enter in a Format 1234 57 987">
+                <label for="phone"> Select area :</label>
+                <select name="country" required>
+                    <option value="none"></option>
+                    <option value="alpha">Alpha</option>
+                    <option value="gamma">Gamma</option>
+                    <option value="beta">Beta</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Booking Details</legend>
+                <label for="date"> Check-in Date: </label><input type="date" name="date" min="2018-03-21">
+                <label for="numberOfAdditionalGuests"> Any additional guests:</label><input type="number" name="numberOfAdditionalGuests" min="0" max="2">
+                <label for="name">Do you require laundry services?</label>
+                <label for="yeslaundry">Yes</label><input type="radio" name="laundry" value="yeslaundry"> 
+                <label for="nolaundry">No</label><input type="radio" name="laundry" value="nolaundry">
+                <br>
+                <label for="wakeUpCall">Would you like a wake up call arrangement discussed at check-in?</label> <input type="checkbox" name="wakeUpCall" value="yes" checked>
+                <br>
+                <button type="submit" form="form" value="Submit">Submit</button>
+                
+            </fieldset>
+        </form>
+
+        <?php
+// define variables and set to empty values
+$name = $email = $gender = $comment = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $name = test_input($_POST["name"]);
+  $email = test_input($_POST["email"]);
+  $website = test_input($_POST["website"]);
+  $comment = test_input($_POST["comment"]);
+  $gender = test_input($_POST["gender"]);
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?>
+
+<h2>PHP Form Validation Example</h2>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+  Name: <input type="text" name="name">
+  <br><br>
+  E-mail: <input type="text" name="email">
+  <br><br>
+  Website: <input type="text" name="website">
+  <br><br>
+  Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+  <br><br>
+  Gender:
+  <input type="radio" name="gender" value="female">Female
+  <input type="radio" name="gender" value="male">Male
+  <br><br>
+  <input type="submit" name="submit" value="Submit">  
+</form>
+
+<?php
+echo "<h2>Your Input:</h2>";
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo $website;
+echo "<br>";
+echo $comment;
+echo "<br>";
+echo $gender;
+?>
+
+    </body>
+  </html>

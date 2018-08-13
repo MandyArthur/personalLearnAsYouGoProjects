@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guessing Game </title>
+<link rel="stylesheet" type="text/css" href="games.css">
+</head>
+<body>
+
+	<div class = "header">
+	<h1>Guessing Game</h1> <br/>
+	</div>
+	<div  class = "guess">
+		<!--To use the working version of this project please message me on amanda.arthur1900@gmail.com.
+			This was one of my very first PHP experiments and I hadn't worked out the kinks. 
+			I have now -->
+
+	<form acton = "C:\xampp\htdocs\NewPHPProject\generator.php" method = "POST">
+	<input type = "number" name = "guess" min = "1" max = "5" style = "width:100px;" placeholder = "Guess (1-5)"/><br/><br/>
+	<input type = "submit" name = "submit"  style = "position: absolute; left:25%;" value = "Guess"/>
+	</form>
+
+</body>
+</html>
+
+<!-- 
+	<?php
+  
+$rand = rand(1, 5);
+
+$guess = $_POST['guess'];
+$submit = $_POST['submit'];
+
+if(isset($submit)) {
+    
+    if($guess < 1 || $guess > 5) {
+        echo "Your guess must be a number between 1 and 5!";
+    } else {
+        if($guess != $rand) {
+            echo "Incorrect, the correct answer is " .$rand;
+        } else {
+            echo "That is correct!";
+        }
+    }
+    
+} else {
+    header("Location: index.php");
+    exit();
+}
+
+?>
+
+-->

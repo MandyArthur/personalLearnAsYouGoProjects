@@ -1,0 +1,66 @@
+.temp{
+  cursor:pointer;
+  color:#006dcc;
+}
+.temp:hover{
+  color:#005096;
+}
+h1 {
+  font-size: 5em;
+}
+
+.all-icon {
+  margin-bottom: 20px;
+}
+
+div.hide {
+  display: none;
+}
+
+.icon {
+  color: #161616;
+  position: relative;
+  display: inline-block;
+  width: 12rem;
+  height: 10rem;
+}
+
+.cloud {
+    background-image:url("http://www.weatherwizkids.com/wp-content/uploads/2015/02/fractus-clouds.jpg");
+}
+
+
+
+.sun {
+    background-image:url("https://wallpaperbrowse.com/media/images/506824.jpg");
+}
+
+.rays {
+    background-image:url("https://wallpaperbrowse.com/media/images/506824.jpg");
+}
+
+
+.cloud + .sun {
+    background-image:url("http://2.bp.blogspot.com/-EUf8RMYHbcQ/TsO_E6dELLI/AAAAAAAAB7g/gnawt5AzyAA/s1600/DSC_1676.JPG");
+}
+
+.rain,
+.lightning,
+.snow {
+    background-image:url("https://i.ytimg.com/vi/Y8xk1jRmMnA/maxresdefault.jpg");
+}
+
+.rain {
+    background-image:url("https://www.iconexperience.com/_img/g_collection_png/standard/512x512/cloud_rain.png");
+}
+
+
+
+.bolt{
+    background-image:url("https://cdn1.iconfinder.com/data/icons/vacation-landmarks/512/55-512.png"); 
+}
+
+.flake {
+    background-image:url("https://cdn1.iconfinder.com/data/icons/winter-60/665/8-Snowflake-512.png"); 
+}
+

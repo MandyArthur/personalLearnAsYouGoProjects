@@ -1,0 +1,17 @@
+body{
+    background-color: blanchedalmond; 
+}
+.header{
+    position: absolute; 
+    left: 50%; 
+    top: 44%; 
+    transform: translate(-50%,-44%); 
+-webkit-transform: translate(-50%,-44%); 
+}
+.guess{
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%,-50%); 
+-webkit-transform: translate(-50%,-50%); 
+}

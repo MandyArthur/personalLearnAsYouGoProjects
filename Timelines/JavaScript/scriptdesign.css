@@ -1,0 +1,52 @@
+body{
+    margin: 0;  
+    background-color: #ede9fa; 
+
+    
+    
+}
+
+#note{
+    font-style: bold; 
+    color:blue; 
+}
+footer{
+    background-color:white; 
+    display: block;
+    padding: 1%; 
+    margin: 0%; 
+    
+}
+
+#demo1, #demo2, #demo3, #results , #alpha , #beta ,#omikron,#xi, #tau, #upsilon, #phi, #chi, #psi, #omega,
+#pi, #rho, #sigma, #gamma , #delta, #eta, #zeta, #epsilon, #theta, #iota, #kappa, #lambda, #mu, #nu, #zi  {
+    color: #ff0066; 
+} 
+
+ul.menu  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #030a55;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li.menu a {
+    display: block;
+    color: rgb(250, 1, 1);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li.menu a.active {
+    background-color: rgb(6, 40, 85);
+    color: white;
+}
+
+li.menu a:hover:not(.active) {
+    background-color: rgb(73, 35, 109);
+    color: white;
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<head>
+    <title>JavaScript Timeline</title> 
+    <link rel="stylesheet" type="text/css" href="scriptdesign.css">
+
+</head>
+<body>
+        <ul class="menu">
+                <li class="menu"><a href="time.html">Intro & Day 1</a></li>
+                <li class="menu"><a href="numbers.html">Day 2</a></li>
+                <li class="menu"><a href="day3.html">Day 3 </a></li>
+                <li class="menu"><a href="day4.html">Day 4</a></li>
+                <li class="menu"><a href="day5.html">Day 5</a></li>
+                <li class="menu"><a href="Day6.html">Day 6</a></li>
+                <li class="menu"><a href="day7.html">Day 7</a></li>
+                <li class="menu"><a href="day8.html">Day 8</a></li>
+                <li class="menu"><a href="newbuild.html">Day 9</a></li>
+
+              </ul>
+              
+<div style="margin-left:15%;padding:1px 16px;height:1000px;">
+    <h1>Amanda's JavaScript Timeline</h1>
+    <p>Quick note: I had been working with JavaScript for a little while but was never fully satisfied with
+        what I knew over what I could copy and paste. So I thought this light exercise of documenting 
+        my learning journey might help boost my confidence and overall skill level. Also, it's a great point of 
+        reference for myself as well as potential employers. 
+    </p>
+    <p id = "results">Text in this color are results of JavaScript code. Please get in touch if you would like to 
+        arrange to view my portfolio.
+    </p>
+    <p><a href="https://www.w3schools.com/jsref/default.asp">JavaScript and HTML DOM Reference</a></p>
+<h4>26th March 2018</h4>
+    <div class = "marchtwentysix">
+        <button type="button"
+                onclick="document.getElementById('pi').innerHTML = Date()">
+                    Click me to display Date and Time.</button>
+                    <p id="pi">Watch this space</p>
+    </div>
+    <script>
+        window.alert("Welcome to my JavaScript Timeline! Message me if you have any feedback/comments.");
+        </script>
+    <ul>
+      
+        <li><a href="https://www.w3schools.com/js/js_intro.asp">JS Introduction</a></li>
+        <li><a href="https://www.w3schools.com/js/js_whereto.asp">JS Where to</a></li>
+        <li> <a href="https://www.w3schools.com/js/js_output.asp">JS Output</a></li>
+        <li><a href="https://www.w3schools.com/js/js_statements.asp">JS Statements</a></li>
+        <li><a href="https://www.w3schools.com/js/js_syntax.asp">JS Syntax</a></li>
+        <li>See end of page for JS <a href="https://www.w3schools.com/js/js_variables.asp">beginner exercises</a> that I had completed. </li>
+        <li><a href="https://www.w3schools.com/js/js_operators.asp"> JS Operators</a></li>
+        <li> <a href="https://www.w3schools.com/js/js_arithmetic.asp">JS Arithmetic & exercises</a></li>
+        <li><a href="https://www.w3schools.com/js/js_assignment.asp"> JS Assignment & exercises</a></li>
+        <li><a href="https://www.w3schools.com/js/js_events.asp">JS Events</a></li>
+    </ul>
+
+    
+<div class = marchtwentysixone>
+    <h4>Data Types</h4>
+        <p id="alpha"></p>
+<script>
+var person = {
+    firstName : "Zoe",
+    lastName  : "Artur",
+    age       : 30,
+    eyeColor  : "black"
+};
+
+document.getElementById("alpha").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+<h4>27th March 2018</h4>
+<h4>JavaScript String Methods</h4>
+
+<h5>String length</h5>
+<p id="note">The length property returns the length of a string. The length of the string 'floccinaucinihilipilification' is:  </p> 
+<p id="beta"></p>
+
+<script>
+var txt = "floccinaucinihilipilification";
+document.getElementById("beta").innerHTML = txt.length;
+</script>
+
+<h5>Locate string</h5>
+<p id="note">The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string.</p>
+<p>The indexOf() method returns the position of the first occurrence of<b> 'Ariel'</b> in the following text:
+<br>In Disney's beguiling animated romp, rebellious 16-year-old mermaid <b>Ariel</b> (Jodi Benson) is fascinated
+ with life on land. On one of her visits to the surface, which are forbidden by her controlling father, 
+ King Triton, she falls for a human prince. Determined to be with her new love, <b>Ariel</b> makes a dangerous deal 
+ with the sea witch Ursula (Pat Carroll) to become human for three days. But when plans go awry for the 
+ star-crossed lovers, the king must make the ultimate sacrifice for his daughter.</p>
+<p>First occurence: </p> <b id="gamma"></b>
+
+<script>
+var str ="In Disney's beguiling animated romp, rebellious 16-year-old mermaid Ariel (Jodi Benson) is fascinated with life on land. On one of her visits to the surface, which are forbidden by her controlling father, King Triton, she falls for a human prince. Determined to be with her new love, Ariel makes a dangerous deal with the sea witch Ursula (Pat Carroll) to become human for three days. But when plans go awry for the star-crossed lovers, the king must make the ultimate sacrifice for his daughter.";
+var pos = str.indexOf("Ariel");
+document.getElementById("gamma").innerHTML = pos;
+</script>
+<p id="note">The lastIndexOf() method returns the position of the last occurrence of the same text:</p>
+
+<b id="delta"></b>
+
+<script>
+var str = "In Disney's beguiling animated romp, rebellious 16-year-old mermaid Ariel (Jodi Benson) is fascinated with life on land. On one of her visits to the surface, which are forbidden by her controlling father, King Triton, she falls for a human prince. Determined to be with her new love, Ariel makes a dangerous deal with the sea witch Ursula (Pat Carroll) to become human for three days. But when plans go awry for the star-crossed lovers, the king must make the ultimate sacrifice for his daughter.";
+var pos = str.lastIndexOf("Ariel");
+document.getElementById("delta").innerHTML = pos;
+</script>
+<h5>The Slice method</h5>
+<p id="note">The slice() method extract a part of a string
+    and returns the extracted parts in a new string: Apply, Banana, Kiwi</p>
+    
+    <p id="epsilon"></p>
+    
+    <script>
+    var str = "Apple, Banana, Kiwi";
+    var res = str.slice(7,13);
+    document.getElementById("epsilon").innerHTML = res; 
+    </script>
+<h5>Substr() Method</h5>
+<p id="note">The substr() method extract a part of a string
+    and returns the extracted parts in a new string and cannot be negative: Papaya, Mango, Passionfruit</p>
+    
+    <p id="zeta"></p>
+    
+    <script>
+    var str = "Papaya, Mango, Passionfruit";
+    var res = str.substring(7,13);
+    document.getElementById("zeta").innerHTML = res;
+    </script>
+<h3>Replacing String Content</h3>
+<p id="eta">The weather today is dull and cloudy!</p>
+
+<script>
+function myweather() {
+    var str = document.getElementById("demo").innerHTML; 
+    var txt = str.replace("dull and cloudy","bright and sunny");
+    document.getElementById("eta").innerHTML = txt;
+}
+</script>
+<h4><a href="https://www.w3schools.com/js/js_string_methods.asp">Exercises</a></h4>
+<p>Q1) Display the position of the first occurrence of "World" in the variable txt.</p>
+
+<p id="theta"></p>
+
+<script>
+var txt = "Hello World";
+document.getElementById("theta").innerHTML = txt.indexOf("World");
+</script>
+
+<h5>Q2) Use the slice() method to display only "Banana,Kiwi"</h5>
+
+<p id="iota"></p>
+
+<script>
+var str = "Apple,Banana,Kiwi";
+document.getElementById("iota").innerHTML = str.slice(6,17);
+
+
+</script>
+
+<h5>Q3) Use the replace() method to replace "World" with "Universe".</h5>
+<p id="kappa"></p>
+
+<script>
+var txt = "Hello World";
+document.getElementById("kappa").innerHTML = txt.replace("World", "Universe");
+</script>
+
+<h5>Q4) Convert the value of txt to upper case.</h5>
+<p id="lambda"></p>
+
+<script>
+var txt = "Hello World";
+document.getElementById("lambda").innerHTML = txt.toUpperCase();
+</script>
+<h5>Q5) Convert the value of txt to lower case.</h5>
+
+<p id="mu"></p>
+
+<script>
+var txt = "Hello World";
+document.getElementById("mu").innerHTML = txt.toLowerCase();
+</script>
+
+<h5>Q6) Use the concat() method to join the two strings: str1 and str2.</h5>
+
+
+<p id="zi">Display the result here.</p>
+
+<script>
+var str1 = "Hello ";
+var str2 = "World!";
+var str3 = str1.concat(" ",str2);
+document.getElementById("zi").innerHTML = str3;
+</script>
+
+
+
+</div>
+</div>
+</body>

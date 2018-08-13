@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<head>
+    <title>JavaScript Timeline</title> 
+    <link rel="stylesheet" type="text/css" href="scriptdesign.css">
+</head>
+<body>
+        <ul class="menu">
+                <li class="menu"><a href="time.html">Intro & Day 1</a></li>
+                <li class="menu"><a href="numbers.html">Day 2</a></li>
+                <li class="menu"><a href="day3.html">Day 3 </a></li>
+                <li class="menu"><a href="day4.html">Day 4</a></li>
+                <li class="menu"><a href="day5.html">Day 5</a></li>
+                <li class="menu"><a href="Day6.html">Day 6</a></li>
+                <li class="menu"><a href="day7.html">Day 7</a></li>
+                <li class="menu"><a href="newbuild.html">Day 8</a></li>
+                <li class="menu"><a href="newbuild.html">Day 9</a></li>
+
+              </ul>
+              
+<div style="margin-left:15%;padding:1px 16px;height:1000px;"> 
+    <h1>Amanda's JavaScript Timeline</h1>
+
+    <h4 id="upsilon"> </h4>
+        <script>
+            var d = new Date(2018,03,03,9,15,38,0);
+            document.getElementById("upsilon").innerHTML ="Today's work started at: " + d;
+            </script>
+    <h5><a href="https://www.w3schools.com/js/js_arrays.asp">JavaScript Array</a> </h5>
+
+
+    <h4>Looping through array using for loop. </h4>
+    <p id="alpha"></p>
+
+    <script>
+        var homes, text, fLen, i;
+        
+        homes = ["Serviced Apartments", "Rooms", "Detached Houses", "Care Homes", "Flats"];
+        fLen = homes.length;
+        text = "<ol>";
+        for (i = 0; i < fLen; i++) {
+            text += "<li>" + homes[i] + "</li>";
+        }
+        text += "</ol>";
+        document.getElementById("alpha").innerHTML = text;
+        </script>
+
+
+        <p>The push method appends a new element to an array.</p>
+
+        <button onclick="addHomes()">Try it</button>
+
+        <p id="beta"></p>
+
+        <script>
+            var homes, text, fLen, i;
+            function addHomes(){
+            homes = ["Serviced Apartments", "Rooms", "Detached Houses", "Care Homes", "Flats"];
+            homes.push("Hostels"); 
+            homes.push("Hotels");
+            homes.push("Campus");
+            fLen = homes.length;
+            text = "<ol>";
+            for (i = 0; i < fLen; i++) {
+                text += "<li>" + homes[i] + "</li>";
+            }
+
+                    text += "</ol>";
+            document.getElementById("beta").innerHTML = text;
+            }
+            </script>
+
+
+<button onclick="addPlace()"> No list version </button>
+
+<p id="gamma"></p>
+
+<script>
+var homes = ["Serviced Apartments", "Rooms", "Detached Houses", "Care Homes", "Flats"];
+document.getElementById("gamma").innerHTML = homes;
+
+function addPlace() {
+    homes.push("Campus");
+    document.getElementById("gamma").innerHTML = homes;
+}
+    </script>
+           
+           <h4><a href="https://www.w3schools.com/js/js_arrays.asp">Array</a>Exercises</a></h4>
+
+           <ol>
+               <li>Use the length property to add a new item to cars: Mercedes.</li>
+
+               <p id="delta"></p> 
+
+                <script>
+                var cars = ["Saab", "Volvo", "BMW"];
+                cars.push("Mercedes"); 
+                document.getElementById("delta").innerHTML = cars;
+                </script>
+
+                <li> Use the length property to display the number of array items in cars.</li>
+                <p id="epsilon"></p> 
+
+                <script>
+                var cars = ["Saab", "Volvo", "BMW"];
+                document.getElementById("epsilon").innerHTML = cars.length;
+                </script>
+
+                <li>Change the first item of cars to "Opel" by referring to the index number, and display the whole array.</li>
+                <p id="eta"></p> 
+
+                <script>
+                var cars = ["Saab", "Volvo", "BMW"];
+                cars[0]="Opel"; 
+                document.getElementById("eta").innerHTML = cars;
+                </script>
+
+                <li>Display the "Volvo" item of the cars array.</li>
+
+                <p id="zeta"></p> 
+
+                <script>
+                var cars = ["Saab", "Volvo", "BMW"];
+                document.getElementById("zeta").innerHTML = cars[1];
+                </script>
+
+                <li>Create an array named cars, assign the values "Saab", "Volvo" and "BMW" to it, and display it.</li>
+
+                                
+                <p id="theta">Display the result here.</p> 
+
+                <script>
+                var cars = ["Saab", "Volvo","BMW"]; 
+                document.getElementById("theta").innerHTML = cars;
+                </script>
+
+        
+           </ol>
+
+
+           <h4>Array methods</h4>
+
+           <p id="note">The JavaScript method toString() converts an array to a string of (comma separated) 
+               array values.</p>
+            
+               <p id="iota"></p>
+
+               <script>
+               var money = ["Dollar", "Pound", "Yen", "Baht"];
+               document.getElementById("iota").innerHTML = money.toString();
+               </script>
+            <p id="note">The join() method also joins all array elements into a string.</p>
+            <p id="kappa"></p>
+            <script>
+        
+        document.getElementById("kappa").innerHTML = money.join(" + ");
+        </script>
+
+        <p id="note">The pop() method removes the last element from an array.</p>
+        <p id="lambda"></p>
+        <p id="mu"></p>
+        <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("lambda").innerHTML = fruits;
+        fruits.pop();
+        document.getElementById("mu").innerHTML = fruits;
+        </script>
+        <p id="note">The pop() method returns the value that was "popped out".</p>
+        <p>The pop() method removes the last element from an array.</p>
+
+        <p>The return value of the pop() method is the removed item.</p>
+
+        <p id="nu"></p>
+        <p id="xi"></p>
+        <p id="omikron"></p>
+
+        <script>
+        var disney = ["Cinderalla", "Snow White", "Belle", "Jasmin", "Pocahontas"];
+        document.getElementById("nu").innerHTML = disney;
+        document.getElementById("xi").innerHTML = disney.pop();
+        document.getElementById("omikron").innerHTML = disney;
+        </script>
+
+        <p id="note">The push() method adds a new element to an array (at the end).</p>
+        <p>The push() method returns the new array length.</p>
+
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="pi"></p>
+        <p id="rho"></p>
+
+        <script>
+        var gifts = ["Clothes", "Electronics", "Toys", "Cars", "Holiday money"];
+        document.getElementById("pi").innerHTML = gifts;
+
+        function myFunction() {
+            
+            document.getElementById("pi").innerHTML = gifts.push("Re-gifts");
+            document.getElementById("rho").innerHTML = gifts;
+            
+        }
+        </script>
+
+        <p id="note">The shift() method removes the first array element and "shifts" 
+            all other elements to a lower index.</p>
+        
+            <p id="sigma"></p>
+            <p id="phi"></p>
+            <p id="tau"></p>
+            
+            
+            <script>
+            var color = ["Blue", "Orange", "Azure", "Magenta"];
+
+            document.getElementById("sigma").innerHTML = color;
+           
+            document.getElementById("phi").innerHTML = color.shift();
+            
+            document.getElementById("tau").innerHTML = color;
+
+            </script>
+
+            <p id="note">The unshift() method adds a new element to an array (at the beginning), 
+                and "unshifts" older elements</p>
+
+                <button onclick="capnList()">List of Captains here</button>
+
+            <p id="psi"></p>
+
+
+            <script>
+            var captains = ["Planet", "Simian", "Crunch"];
+            document.getElementById("psi").innerHTML = captains;
+
+            function capnList() {
+                captains.unshift("America");
+                document.getElementById("psi").innerHTML = captains;
+            }
+            </script>
+
+
+
+<footer>
+        <p>Posted by: Amanda Arthur</p>
+        <p>Contact information: <a href="mailto:amandaarthur.1900@gmail.com">amandaarthur.1900@gmail.com</a></p>
+        
+      </footer>
+    </footer>
+
+</body>
+</html>

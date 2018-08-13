@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<head>
+    <title>JavaScript Timeline</title> 
+    <link rel="stylesheet" type="text/css" href="scriptdesign.css">
+ 
+</head>
+<body>
+        <ul class="menu">
+                <li class="menu"><a href="time.html">Intro & Day 1</a></li>
+                <li class="menu"><a href="numbers.html">Day 2</a></li>
+                <li class="menu"><a href="day3.html">Day 3 </a></li>
+                <li class="menu"><a href="day4.html">Day 4</a></li>
+                <li class="menu"><a href="day5.html">Day 5</a></li>
+                <li class="menu"><a href="Day6.html">Day 6</a></li>
+                <li class="menu"><a href="day7.html">Day 7</a></li>
+                <li class="menu"><a href="newbuild.html">Day 8</a></li>
+                <li class="menu"><a href="newbuild.html">Day 9</a></li>
+
+              </ul>
+<div style="margin-left:15%;padding:1px 16px;height:1000px;"> 
+        <h1>Amanda's JavaScript Timeline</h1>
+
+<h2> Boolean Values </h2>
+
+
+<p>Display the value of Boolean(10 < 9):</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="alpha"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("alpha").innerHTML = Boolean(10 < 9);
+}
+</script>
+
+<h4>Facts</h4>
+
+<p id="beta"></p>
+
+<script>
+var b1 = Boolean(100);
+var b2 = Boolean(3.14);
+var b3 = Boolean(-15);
+var b4 = Boolean("Hello");
+var b5 = Boolean('false');
+var b6 = Boolean(1 + 7 + 3.14);
+
+document.getElementById("beta").innerHTML =
+"100 is " + b1 + "<br>" +
+"3.14 is " + b2 + "<br>" +
+"-15 is " + b3 + "<br>" +
+"Any (not empty) string is " + b4 + "<br>" +
+"Even the string 'false' is " + b5 + "<br>" +
+"Any expression (except zero) is " + b6;
+</script>
+
+<p id="note">Everything Without a "Value" is False (Var x = 0, -0, undefined, null, false[not "false"], NaN or an empty string).</p>
+    
+    <p>Display the Boolean value of 0:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="gamma"></p>
+
+<script>
+function myFunction() {
+    var x = 0;
+    document.getElementById("gamma").innerHTML = Boolean(x);
+}
+</script>
+
+<p id="note">Never create booleans as objects. Booleans and objects cannot be safely compared.</p>
+
+<p id="delta"></p>
+
+<script>
+var x = false;               // x is a boolean
+var y = new Boolean(false);  // y is an object
+document.getElementById("delta").innerHTML =
+typeof x + "<br>" + typeof y;
+</script>
+
+<h3><a href="https://www.w3schools.com/jsref/jsref_obj_boolean.asp"> Boolean Reference</a></h3>
+
+<h2> Comparison Operators </h2>
+
+<p>Assign 5 to x, and display the value of the comparison (x == 8):</p>
+
+<p id="eta"></p>
+
+<script>
+var x = 5;
+document.getElementById("eta").innerHTML = (x == 8);
+</script>
+
+<p>Assign 5 to x, and display the value of the comparison (x == "5"):</p>
+
+<p id="zeta"></p>
+
+<script>
+var x = 5;
+document.getElementById("zeta").innerHTML = (x == "5");
+</script>
+
+<p>Assign 5 to x, and display the value of the comparison (x === 5):</p>
+
+<p id="theta"></p>
+
+<script>
+var x = 5;
+document.getElementById("theta").innerHTML = (x === 5);
+</script>
+
+<p>Assign 5 to x, and display the value of the comparison (x === "5").</p>
+
+<p id="kappa"></p>
+
+<script>
+var x = 5;
+document.getElementById("kappa").innerHTML = (x === "5");
+</script>
+
+
+<p>Assign 5 to x, and display the value of the comparison (x != 8).</p>
+
+<p id="lambda"></p>
+
+<script>
+var x = 5;
+document.getElementById("lambda").innerHTML = (x != 8);
+</script>
+
+<p>Assign 5 to x, and display the value of the comparison (x !== 5). Not equal value, not equal type. </p>
+
+<p id="iota"></p>
+
+<script>
+var x = 5;
+document.getElementById("iota").innerHTML = (x !== 5);
+</script>
+
+<p>Assign 5 to x, and display the value of the comparison (x !== "5"):</p>
+
+<p id="mu"></p>
+
+<script>
+var x = 5;
+document.getElementById("mu").innerHTML = (x !== "5");
+</script>
+
+<p>Assign 5 to x, and display the value of the comparison (x !== 8):</p>
+
+<p id="nu"></p>
+
+<script>
+var x = 5;
+document.getElementById("nu").innerHTML = (x !== 8);
+</script>
+
+<h2>Logical Operators</h2>
+
+<p id="note" >The AND operator (&&) returns true if both expressions are true, otherwise it returns false.</p>
+
+<p id="xi"></p>
+
+<script>
+var x = 6;
+var y = 3;
+
+document.getElementById("xi").innerHTML = 
+(x < 10 && y > 1) + "<br>" + 
+(x < 10 && y < 1);
+</script>
+
+<p id="note">The OR operator (||) returns true if one or both expressions are true, otherwise it returns false.</p>
+
+<p id="omikron"></p>
+
+<script>
+var x = 6;
+var y = 3;
+
+document.getElementById("omikron").innerHTML = 
+(x == 5 || y == 5) + "<br>" + 
+(x == 6 || y == 0) + "<br>" + 
+(x == 0 || y == 3) + "<br>" + 
+(x == 6 || y == 3);
+</script>
+
+<p id="note">The NOT operator (!) returns true for false statements and false for true statements.</p>
+
+<p id="pi"></p>
+
+<script>
+var x = 6;
+var y = 3;
+
+document.getElementById("pi").innerHTML = 
+!(x === y) + "<br>" + 
+!(x > y);
+</script>
+
+<p>Input your age and click the button:</p>
+
+<input id="age" value="25" /> <button onclick="drinkingAge()">Drink Aware</button>
+
+<p id="rho"></p>
+
+<script>
+function drinkingAge() {
+    var age, voteable;
+    age = Number(document.getElementById("age").value);
+    if (isNaN(age)) {
+        voteable = "Input is not a number";
+    } else {
+        voteable = (age < 16) ? "Too young" : "Old enough";
+    }
+    document.getElementById("rho").innerHTML = voteable;
+}
+</script>
+
+
+<h3>Detailed Drink Aware </h3>
+
+
+<p>Input your age and click the button:</p>
+
+<input id="age" value = "4"/> <button onclick="drinkingAgeDetail()">Drink Aware</button>
+
+<p id="sigma"></p>
+
+<script>
+    function drinkingAgeDetail() {
+        var age = getElementById("age").value; 
+        var greeting;
+        if (age < 18) {
+            greeting = "no";
+        } else {
+            greeting = "yes";
+        }
+        document.getElementById("sigma").innerHTML = greeting;
+    }
+    </script>
+
+
+
+</div>
+</body>
+</html>

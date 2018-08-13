@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<head>
+    <title>JavaScript Timeline</title> 
+    <link rel="stylesheet" type="text/css" href="scriptdesign.css">
+</head>
+<body>
+        <ul class="menu">
+                <li class="menu"><a href="time.html">Intro & Day 1</a></li>
+                <li class="menu"><a href="numbers.html">Day 2</a></li>
+                <li class="menu"><a href="day3.html">Day 3 </a></li>
+                <li class="menu"><a href="day4.html">Day 4</a></li>
+                <li class="menu"><a href="day5.html">Day 5</a></li>
+                <li class="menu"><a href="Day6.html">Day 6</a></li>
+                <li class="menu"><a href="day7.html">Day 7</a></li>
+                <li class="menu"><a href="newbuild.html">Day 8</a></li>
+                <li class="menu"><a href="newbuild.html">Day 9</a></li>
+
+              </ul>
+<div style="margin-left:15%;padding:1px 16px;height:1000px;"> 
+    <h1>Amanda's JavaScript Timeline</h1>
+
+    <h4 id="upsilon"> </h4>
+        <script>
+            var d = new Date(2018,2,29,9,15,38,0);
+            document.getElementById("upsilon").innerHTML ="Today's work started at: " + d;
+            </script>
+    <h5>JavaScript Math </h5>
+    <p id="note"> Math.PI returns the ratio of a circle's circumference to its diameter </p>
+    <p id="alpha"></p>
+
+    <script>
+    document.getElementById("alpha").innerHTML = Math.PI;
+    </script>
+
+    <p id="note">Math.round(x) returns the value of x rounded to its nearest integer</p>
+
+    <p id="beta"></p>
+    <p id="gamma"></p>
+    <script>
+    document.getElementById("beta").innerHTML = Math.round(4.4);
+   </script>
+    <script>
+    document.getElementById("gamma").innerHTML = Math.round(5.6);
+    </script>
+
+    <p id="note">Math.pow(x,y) returns the value of x (8) to the power of y(2)</p>
+
+    <p id="delta"></p>
+
+    <script>
+    document.getElementById("delta").innerHTML = Math.pow(8,2);
+    </script>
+
+    <p id="note">Math.sqrt(x) returns the square root of x (64)</p>
+
+    <p id="epsilon"></p>
+
+    <script>
+    document.getElementById("epsilon").innerHTML = Math.sqrt(64);
+    </script>
+
+    <p id="note">Math.abs(x) returns the absolute (positive) value of x (-4.4)</p>
+
+
+    <p id="zeta"></p>
+
+    <script>
+    document.getElementById("zeta").innerHTML = Math.abs(-4.4);
+    </script>
+
+    <p id="note">Math.ceil() rounds a number (4.4)<strong>up</strong> to its nearest integer</p>
+
+
+    <p id="eta"></p>
+
+    <script>
+    document.getElementById("eta").innerHTML = Math.ceil(4.4);
+    </script>
+
+
+    <p id="note">Math.floor(x) returns the value of x(4.7) rounded <strong>down</strong> to its nearest integer</p>
+
+    <p id="theta"></p>
+
+    <script>
+    document.getElementById("theta").innerHTML = Math.floor(4.7);
+    </script>
+
+    <p id="note">Math.sin(x) returns the sin of x (given in radians).</p>
+    <p>Angle in radians = (angle in degrees) * PI / 180.</p>
+
+    <p id="iota"></p>
+
+    <script>
+    document.getElementById("iota").innerHTML = 
+    "The sine value of 45 degrees is " + Math.sin(45 * Math.PI / 180);
+    </script>
+
+    <p id="note">Math.cos(x) returns the cosine of x (given in radians).</p>
+    <p>Angle in radians = (angle in degrees) * PI / 180.</p>
+
+    <p id="kappa"></p>
+
+    <script>
+    document.getElementById("kappa").innerHTML = 
+    "The cosine value of 0 degrees is " + Math.cos(0 * Math.PI / 180);
+    </script>
+
+    <p id="note">Math.tan(x) returns the tangent of x (given in radians):</p>
+    <p>Angle in radians = (angle in degrees) * PI / 180.</p>
+
+    <p id="lambda"></p>
+
+    <script>
+    document.getElementById("lambda").innerHTML = 
+    "The tangent value of 45 degrees is " + Math.tan(45 * Math.PI / 180);
+    </script>
+
+    <p id="note">Math.min() returns the lowest value in a list of arguments (0, 150, 30, 20, -8, -200).</p>
+
+    <p id="mu"></p>
+
+    <script>
+    document.getElementById("mu").innerHTML =
+    Math.min(0, 150, 30, 20, -8, -200);
+    </script>
+
+    <p id="note">Math.max() returns the highest value in a list of arguments (0, 150, 30, 20, -8, -200).</p>
+
+    <p id="nu"></p>
+
+    <script>
+    document.getElementById("nu").innerHTML =
+    Math.min(0, 150, 30, 20, -8, -200);
+    </script>
+
+    <p id="note">Math.random() returns a random number between 0 and 1:</p>
+
+    <p id="xi"></p>
+
+    <script>
+    document.getElementById("xi").innerHTML = Math.random();
+    </script>
+
+    <p id="note">JavaScript Math Constants</p>
+
+    <p id="omikron"></p>
+
+    <script>
+    document.getElementById("omikron").innerHTML = 
+    "<p><b>Math.E:</b> " + Math.E + "</p>" +
+    "<p><b>Math.PI:</b> " + Math.PI + "</p>" +
+    "<p><b>Math.SQRT2:</b> " + Math.SQRT2 + "</p>" +
+    "<p><b>Math.SQRT1_2:</b> " + Math.SQRT1_2 + "</p>" +
+    "<p><b>Math.LN2:</b> " + Math.LN2 + "</p>" +
+    "<p><b>Math.LN10:</b> " + Math.LN10 + "</p>" +
+    "<p><b>Math.LOG2E:</b> " + Math.LOG2E + "</p>" +
+    "<p><b>Math.Log10E:</b> " + Math.LOG10E + "</p>";
+    </script>
+
+    <h4><a href="https://www.w3schools.com/js/js_random.asp">Math</a> & <a href="https://www.w3schools.com/js/js_dates.asp">Date Exercises</a></h4>
+    <ol>
+        <li>Use the random() method to display a random number.</li>
+        <p id="pi">Display the result here.</p>
+
+        <script>
+            document.getElementById("pi").innerHTML =
+            Math.random();
+        </script>
+        <li>Fix the code to display the number with the highest value.</li>
+        <p id="rho">Display the result here.</p>
+
+        <script>
+        document.getElementById("rho").innerHTML = Math.max(0, 150, 30, 20, -8);
+        </script>
+
+        <li>Round "5.3" to the nearest integer, and display it.</li>
+        <p id="sigma">Display the result here.</p>
+
+        <script>
+        
+        document.getElementById("sigma").innerHTML= Math.round(5.3); 
+        </script>
+
+        <li>Display the square root of "9".</li>
+        <p id="tau">Display the result here.</p>
+
+        <script>
+        document.getElementById("tau").innerHTML = Math.sqrt(9); 
+        </script>
+
+        <li>Create a Date object to display the current date and time.</li>
+        <p id="phi">Display the result here.</p>
+
+        <script>
+            
+                    var e = new Date();
+                    document.getElementById("phi").innerHTML =  e;
+                
+        </script>
+
+        <li>Create a Date object with the following value: "January 10, 2015 10:00:00". </li>
+
+        <p id="psi">Display the result here.</p>
+
+        <script>
+        document.getElementById("psi").innerHTML = new Date("January 10, 2015 10:00:00");
+        </script>
+
+        <li>Use the toDateString() method to convert the date to a more readable format.</li>
+        <p id="omega"></p>
+
+        <script>
+        document.getElementById("omega").innerHTML = new Date().toDateString();
+        </script>
+
+
+
+
+
+</div>
+</body>
+</html>
