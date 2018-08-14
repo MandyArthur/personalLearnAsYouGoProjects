@@ -1,0 +1,40 @@
+*{
+    padding: 0%; 
+    margin: 0%; 
+    box-sizing: border-box; 
+}
+
+body{
+    height: 100vh;
+    background: rgb(2, 87, 82); 
+    
+}
+
+.memory-game{
+    width: 640px; 
+    height: 640px;
+    display: flex; 
+    margin: auto; 
+    flex-wrap: wrap; 
+    border: 2px solid salmon; 
+}
+
+.memory-card{
+    width: calc(25%-10px); 
+    height: calc(33.33%-10px);
+    position: relative;
+    margin:5px; 
+}
+
+
+
+.front-face, 
+.back-face{
+    position: absolute;
+    width: 100%; 
+    padding: 20px; 
+    border-radius: 5px; 
+    background: darkgreen; 
+   
+}
+
