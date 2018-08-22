@@ -1,0 +1,46 @@
+
+                    table, td, th {
+                        border: 1px solid black;
+                    }
+
+                    table {
+                        border-collapse: collapse;
+                        width: 1000px; 
+                    }
+
+                    th {
+                        height: 300px;
+                        padding: 0%; 
+                    }
+
+                    tr{
+                    height: 350px; 
+                    padding: 0%; 
+                    }
+                .block{
+                    position: relative;
+                }
+              
+                .block {
+                    position: relative;
+                }
+                
+                .workout {
+                    position: absolute;
+                    top: 100px;
+                    left: 16px;
+                    font-size: 18px;
+                }
+                
+                src { 
+                    width: 340px;
+                    height: 350px;
+                    opacity: 0.1;
+                    padding: 0%;
+                }
+                img { 
+                    width: 340px;
+                    height: 350px;
+                    opacity: 0.2;
+                    padding: 0%; 
+                }
