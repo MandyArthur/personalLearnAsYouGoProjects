@@ -6,73 +6,24 @@
 
 body{
     height: 100vh;
-    display: flex;
     background: rgb(2, 87, 82); 
     
 }
 
-div.reload input {
-    
-    background-color: rgb(66, 131, 168); /* Blue */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    top: 5px; 
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    width: 175px;
-}
-
-
-.fa {
-    top: 5px; 
-    padding: 15px 32px;
-    font-size: 30px;
-    width: 175px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-  }
-
-  .fa-google {
-    background: #dd4b39;
-    color: white;
-  }
-  
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-  
-  .fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
-
 .memory-game{
     width: 640px; 
     height: 640px;
+    display: flex; 
     margin: auto; 
-    display: flex;
     flex-wrap: wrap; 
-    border: 5px solid rgb(119, 2, 113); 
-    perspective: 1000px; 
+    border: 2px solid salmon; 
 }
 
 .memory-card{
-   width: calc(25% - 10px) ;  
-   height: calc(33.333% - 10px);
+    width: calc(25%-10px); 
+    height: calc(33.33%-10px);
     position: relative;
-    margin: 5px; 
-    transform: scale(1); 
-    transform-style: preserve-3d; 
-    transition: transform .5s; 
+    margin:5px; 
 }
 
 .memory-card :active{
@@ -80,42 +31,13 @@ div.reload input {
     transition: transform .2s; 
 }
 
-.memory-card.flip {
-    transform: rotateY(180deg); 
-}
-
 .front-face, 
 .back-face{
+    position: absolute;
     width: 100%; 
-    height: 100%;
-    padding: 3px; 
-    position:absolute;
+    padding: 20px; 
     border-radius: 5px; 
-    background: rgb(243, 146, 2); 
-    backface-visibility: hidden; 
+    background: darkgreen; 
    
-  
 }
 
-.front-face{
-    transform: rotateY(180deg); 
-}
-
-.footnote{
-    position: relative;
-    top: 10px; 
-    right: 10px;
-    border: 2px dotted darkgoldenrod; 
-    padding: 5px; 
-    height: 100px;
-    width: 200px;
-    
-}
-p{
-    color: azure; 
-    font-size: 15px; 
-}
-
-a{
-color: aqua; 
-}
