@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+		<title>Matrix Challenge</title>
+</head>
+	<body>
+	<div align="center">
+             <input type="button" value="Stop" onclick="javaScript:startStopImg()" id="startButton">
+             <h3>Matrix Redesigned by <i><a href="https://www.arungudelli.com/html5/matrix-effect-using-html5-and-javascript/">Arunkumar Gudelli</a></i></h3>
+	<!--Inspired by Arun, due to poor commenting, I cant remember whether I added to this project. I do remember being 
+really stuck on the stop/start button and getting it fixed -->
+             <canvas id="q" width="500" height="500">Sorry Browser Won't Support</canvas><br/><br/>
+	
+        
+         
+	</div>
+<script>
+$(document).ready(function(){
+var s=window.screen;
+var width = q.width=s.width;
+var height = q.height;
+var yPositions = Array(300).join(0).split('');
+var ctx=q.getContext('2d');
+var elem = document.getElementById("startButton");
+//<button id="play">Play</button>
+	//<button id="pause">pause</button>
+        
+
+var draw = function () {
+  ctx.fillStyle='rgba(0,0,0,.05)';
+  ctx.fillRect(0,0,width,height);
+  ctx.fillStyle='#ff0080';
+  ctx.font = '10pt Georgia';
+  yPositions.map(function(y, index){
+    text = String.fromCharCode(1e2+Math.random()*33);
+    x = (index * 10)+10;
+    q.getContext('2d').fillText(text, x, y);
+	if(y > 100 + Math.random()*1e4)
+	{
+	  yPositions[index]=0;
+	}
+	else
+	{
+      yPositions[index] = y + 10;
+	}
+  });
+};
+
+
+startStopImg = function b(){
+    
+if (elem.value==="Stop") StopMatrix();
+else RunMatrix();
+   change();
+};
+
+function RunMatrix()
+{
+if(typeof Game_Interval != "undefined") clearInterval(Game_Interval);
+		Game_Interval = setInterval(draw, 33);
+}
+
+change = function b(){
+if (elem.value==="Stop") elem.value = "Start";
+else elem.value = "Stop";
+
+}
+
+function StopMatrix()
+{
+clearInterval(Game_Interval);
+  
+}
+//setInterval(draw, 33);
+//$("button#pause").click(function(){
+//StopMatrix();});
+//$("button#play").click(function(){RunMatrix();});
+
+//One button 
+
+
+
+
+
+window.onload = RunMatrix(); 
+
+
+})
+</script>
+</body>
+</html>
