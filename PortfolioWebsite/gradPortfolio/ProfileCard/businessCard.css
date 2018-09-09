@@ -21,6 +21,15 @@ body
     transform: translate(-50%, -50%);
     
 }
+section .text p {
+  
+    width: 425px;
+    border: 5px solid #e91e63;
+    padding: 25px;
+    margin-left: 400px; 
+    color: #262626; 
+   
+}
 
 .card
 {
@@ -36,7 +45,21 @@ body
 
 }
 
-.card .front
+.card-david
+{
+    position:absolute;
+    top: 60%; 
+    left: 85%; 
+    transform: translate(-50%,-50%); 
+    width: 300px; 
+    height: 400px; 
+    transform-style: preserve-3d; 
+    perspective: 600px; 
+    transition: 0.5s;  
+
+}
+
+.card .front , .card-david .front
 {
     position: absolute; 
     top: 0; 
@@ -49,9 +72,26 @@ body
     transition: 0.5s; 
 }
 
+.card-david:hover .front{
+    transform: rotateX(-180deg); 
+}
 .card:hover .front {
     transform: rotateX(-180deg); 
 }
+
+.card-david .back
+{
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: #000; 
+    backface-visibility: hidden; 
+    transform: rotateX(180deg); 
+    transition: 0.5s; 
+}
+
 .card .back
 {
     position: absolute; 
@@ -65,10 +105,23 @@ body
     transition: 0.5s; 
 }
 
+.card-david:hover .back {
+    transform: rotateX(0deg); 
+}
+
 .card:hover .back {
     transform: rotateX(0deg); 
 }
 
+.card-david .back:before {
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: -50%; 
+    width: 100%; 
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1); 
+   }
 
 .card .back:before {
     content: ''; 
@@ -78,6 +131,18 @@ body
     width: 100%; 
     height: 100%;
     background: rgba(255, 255, 255, 0.1); 
+   }
+   
+   .card-david .back .details
+   {
+       position: absolute; 
+       top: 50%; 
+       transform: translateY(-50%); 
+       left:0%; 
+       width: 100%; 
+       text-align: center; 
+       padding: 20px; 
+       box-sizing: border-box; 
    }
    
    
@@ -93,6 +158,13 @@ body
        box-sizing: border-box; 
    }
    
+   .card-david .back .details h2{
+    margin: 0;
+    padding: 0; 
+    font-size: 42px; 
+    color: #fff; 
+
+}
    .card .back .details h2{
        margin: 0;
        padding: 0; 
@@ -100,9 +172,15 @@ body
        color: #fff; 
    
    }
+
+   .card-david .back .details h2 span{
+       color:#ffb26d; 
+       font-size: 30px; 
    
+   }
+
    .card .back .details h2 span{
-       color: blue; 
+       color: rgb(0, 255, 255); 
        font-size: 30px; 
    
    }
