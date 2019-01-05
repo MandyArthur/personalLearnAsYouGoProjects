@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Parsing a JSON String</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            function jsonParse(){
+                //var inString = prompt("Enter JSON object"); 
+                var out = " "; 
+                var myObjects = new Object(); 
+                myObjects.Day1 = "Mon"; 
+                myObjects.Day2 = "Tues"; 
+                myObjects.Day3 = "Wed"; 
+                myObject = JSON.stringify(myObjects); 
+                for(i in myObject){
+                    out += "Property: " + i + " = " + myObject[i] + '\n'; 
+                }
+                alert(out); 
+                alert(myObject); 
+            }
+        </script>
+</head>
+<body onload = "jsonParse()">
+    
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_WRNIgG7IEeeFT9PLrzhtNA" name="RootElement">
+  <packagedElement xmi:type="uml:Class" xmi:id="_iy5ugG7IEeeFT9PLrzhtNA" name="Player">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_7WZdAG7JEeeFT9PLrzhtNA" name="coach" type="_o3GFkG7IEeeFT9PLrzhtNA" association="_7WEs4G7JEeeFT9PLrzhtNA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_o3GFkG7IEeeFT9PLrzhtNA" name="Coach"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pwd9kG7IEeeFT9PLrzhtNA" name="Tennis Court"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_rdBmAG7IEeeFT9PLrzhtNA" name="Stadium"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uTpN0G7IEeeFT9PLrzhtNA" name="Tournament"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wWzYYG7IEeeFT9PLrzhtNA" name="Training session"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7WEs4G7JEeeFT9PLrzhtNA" memberEnd="_7WZdAG7JEeeFT9PLrzhtNA _7WaEEG7JEeeFT9PLrzhtNA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7WN20G7JEeeFT9PLrzhtNA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7WOd4G7JEeeFT9PLrzhtNA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7WaEEG7JEeeFT9PLrzhtNA" name="player" type="_iy5ugG7IEeeFT9PLrzhtNA" association="_7WEs4G7JEeeFT9PLrzhtNA"/>
+  </packagedElement>
+</uml:Model>

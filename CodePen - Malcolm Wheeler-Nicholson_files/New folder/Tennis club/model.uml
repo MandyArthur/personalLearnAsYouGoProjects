@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_WRNIgG7IEeeFT9PLrzhtNA" name="RootElement">
+  <packagedElement xmi:type="uml:Class" xmi:id="_iy5ugG7IEeeFT9PLrzhtNA" name="Player">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_7WZdAG7JEeeFT9PLrzhtNA" name="coach" type="_o3GFkG7IEeeFT9PLrzhtNA" association="_7WEs4G7JEeeFT9PLrzhtNA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QvpuAW7UEeeFT9PLrzhtNA" name="tennis court" type="_pwd9kG7IEeeFT9PLrzhtNA" association="_Qvn40G7UEeeFT9PLrzhtNA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_xOn6wG7UEeeFT9PLrzhtNA" name="Id">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_riTbsG7VEeeFT9PLrzhtNA" name="name">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_6Pu5cG7VEeeFT9PLrzhtNA" name="gender"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_o3GFkG7IEeeFT9PLrzhtNA" name="Coach"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pwd9kG7IEeeFT9PLrzhtNA" name="Tennis Court"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_rdBmAG7IEeeFT9PLrzhtNA" name="Stadium"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uTpN0G7IEeeFT9PLrzhtNA" name="Tournament">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ij2IYG7UEeeFT9PLrzhtNA" name="stadium" type="_rdBmAG7IEeeFT9PLrzhtNA" association="_ij06QG7UEeeFT9PLrzhtNA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wWzYYG7IEeeFT9PLrzhtNA" name="Training session"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7WEs4G7JEeeFT9PLrzhtNA" memberEnd="_7WZdAG7JEeeFT9PLrzhtNA _7WaEEG7JEeeFT9PLrzhtNA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7WN20G7JEeeFT9PLrzhtNA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7WOd4G7JEeeFT9PLrzhtNA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7WaEEG7JEeeFT9PLrzhtNA" name="player" type="_iy5ugG7IEeeFT9PLrzhtNA" association="_7WEs4G7JEeeFT9PLrzhtNA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Qvn40G7UEeeFT9PLrzhtNA" memberEnd="_QvpuAW7UEeeFT9PLrzhtNA _QvsKQG7UEeeFT9PLrzhtNA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QvpG8G7UEeeFT9PLrzhtNA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QvpuAG7UEeeFT9PLrzhtNA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QvsKQG7UEeeFT9PLrzhtNA" name="player" type="_iy5ugG7IEeeFT9PLrzhtNA" association="_Qvn40G7UEeeFT9PLrzhtNA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ij06QG7UEeeFT9PLrzhtNA" memberEnd="_ij2IYG7UEeeFT9PLrzhtNA _ij4koG7UEeeFT9PLrzhtNA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ij1hUG7UEeeFT9PLrzhtNA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ij1hUW7UEeeFT9PLrzhtNA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ij4koG7UEeeFT9PLrzhtNA" name="tournament" type="_uTpN0G7IEeeFT9PLrzhtNA" association="_ij06QG7UEeeFT9PLrzhtNA"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_TNtPYG7VEeeFT9PLrzhtNA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TOJUQG7VEeeFT9PLrzhtNA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
